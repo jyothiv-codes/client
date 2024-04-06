@@ -1,38 +1,143 @@
+@import 'primereact/resources/themes/saga-blue/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
 .App {
-  text-align: center;
+  
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #F0EAD6;
+  color: #fff;
+  padding: 10px 20px; 
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.subtitle {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.main {
+  padding-right: 340px; 
+  padding-left: 20px; 
+}
+
+.container {
+  display: flex;
+  padding-top: 5px;
+  
+}
+
+.footer {
+  background-color: #F0EAD6;
+  color: black;
+  padding: 5px 10px; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; 
+}
+
+.product-list ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.product-item button {
+  margin-top: 10px;
+}
+
+.product-list-item {
+  margin-top: 40px;
+}
+
+.product-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+
+.product-box-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.product-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-box img {
+  width: 100%;
+  height: auto;
+}
+
+.product-box p {
+  margin: 5px 0;
+}
+
+.product-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-box button:hover {
+  background-color: #0056b3;
+}
+
+.add-to-cart-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.cart-btn {
+  padding: 3px 8px;
+  margin: 0 2px;
+}
+
+.cart-quantity {
+  margin: 0 5px;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}
+
+.search-bars {
+  display: flex;
+  gap: 10px; 
+}
+.product-list-container {
+  display: flex;
+  flex-direction: column;
 }
